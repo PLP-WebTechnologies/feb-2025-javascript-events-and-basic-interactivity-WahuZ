@@ -1,0 +1,108 @@
+body {
+  font-family: Arial, sans-serif;
+  max-width: 700px;
+  margin: 20px auto;
+  padding: 0 10px;
+  background: #f0f9f7;
+  color: #264653;
+}
+
+header {
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+button {
+  background-color: #2a9d8f;
+  color: white;
+  border: none;
+  padding: 10px 15px;
+  margin: 5px 0;
+  cursor: pointer;
+  border-radius: 5px;
+  transition: background-color 0.3s ease;
+}
+
+button:hover {
+  background-color: #21867a;
+}
+
+.slideshow {
+  text-align: center;
+  margin: 30px 0;
+}
+
+.slideshow img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 8px;
+  margin-bottom: 10px;
+}
+
+.tabs {
+  display: flex;
+  gap: 10px;
+  margin-bottom: 10px;
+}
+
+.tablinks {
+  flex: 1;
+  padding: 10px;
+  background: #e9f5f3;
+  border: 1px solid #2a9d8f;
+  border-radius: 5px;
+  cursor: pointer;
+  text-align: center;
+}
+
+.tablinks.active {
+  background: #2a9d8f;
+  color: white;
+  font-weight: bold;
+}
+
+.tabcontent {
+  border: 1px solid #2a9d8f;
+  border-radius: 5px;
+  padding: 15px;
+  display: none;
+}
+
+.tabcontent.active {
+  display: block;
+}
+
+form {
+  margin-top: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+label {
+  font-weight: bold;
+}
+
+input {
+  padding: 8px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+input:focus {
+  border-color: #2a9d8f;
+  outline: none;
+}
+
+.error {
+  color: red;
+  font-size: 0.9em;
+  height: 1em;
+}
+
+#formMessage {
+  margin-top: 10px;
+  font-weight: bold;
+  color: green;
+}
+

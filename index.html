@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Mental Health Awareness</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header>
+    <h1>Mental Health Awareness</h1>
+    <p>Because your mind matters 💚</p>
+  </header>
+
+  <!-- Interactive Button -->
+  <section>
+    <button id="encourageBtn">Click me for encouragement</button>
+  </section>
+
+  <!-- Image Slideshow -->
+  <section class="slideshow">
+    <img id="slideImage" src="https://picsum.photos/id/1018/600/300" alt="Calm nature" />
+    <div>
+      <button id="prevBtn">Previous</button>
+      <button id="nextBtn">Next</button>
+    </div>
+  </section>
+
+  <!-- Tabs Section -->
+  <section>
+    <div class="tabs">
+      <button class="tablinks active" data-tab="info1">What is Mental Health?</button>
+      <button class="tablinks" data-tab="info2">Common Issues</button>
+      <button class="tablinks" data-tab="info3">Getting Help</button>
+    </div>
+    <div id="info1" class="tabcontent active">
+      <p>Mental health includes our emotional, psychological, and social well-being.</p>
+    </div>
+    <div id="info2" class="tabcontent">
+      <p>Common issues include anxiety, depression, and stress.</p>
+    </div>
+    <div id="info3" class="tabcontent">
+      <p>Seek support from professionals, friends, or family.</p>
+    </div>
+  </section>
+
+  <!-- Signup Form -->
+  <section>
+    <h2>Subscribe for Mental Health Tips</h2>
+    <form id="signupForm" novalidate>
+      <label for="email">Email (required):</label>
+      <input type="email" id="email" name="email" required />
+      <span id="emailError" class="error"></span>
+
+      <label for="password">Password (min 8 chars):</label>
+      <input type="password" id="password" name="password" minlength="8" required />
+      <span id="passwordError" class="error"></span>
+
+      <button type="submit">Subscribe</button>
+      <p id="formMessage"></p>
+    </form>
+  </section>
+
+  <script src="script.js"></script>
+</body>
+</html>
+
